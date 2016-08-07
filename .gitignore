@@ -1,47 +1,25 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Cache crap that Valve autogenerates
+*.bin
+*.cfg
 
-# Folder config file
-Desktop.ini
+# Compiled formats
+*.vpcf_c
+*.vtex_c
+*.vsndevts_c
+*.vsnd_c
+*.vmat_c
+*.vjs_c
+*.vxml_c
+*.vcss_c
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Commit panorama compiled textures
+!game/dota_addons/gameleap_barebones/panorama/images/*.vtex_c
+!game/dota_addons/gameleap_barebones/panorama/images/custom_game/*.vtex_c
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Map overviews
+content/dota_addons/gameleap_barebones/materials/overviews/*.vmat
+content/dota_addons/gameleap_barebones/materials/overviews/*.txt
+game/dota_addons/gameleap_barebones/resource/overviews/*
 
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+#Github dump
+*.stackdump
