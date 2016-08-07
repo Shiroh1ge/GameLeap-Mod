@@ -20,8 +20,9 @@
     vertical-align: top;
     border: 2px solid blue;
     position: absolute;
-    display: block;
+    display: inline-block;
     z-index: 1;
+    margin-top: 5%;
 }
 
 
@@ -37,7 +38,7 @@
 */
 
 #btnTest {
-    display: inline-block;
+
     font-size: 24px;
     cursor: pointer;
     outline: none;
