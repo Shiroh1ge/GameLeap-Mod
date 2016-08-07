@@ -48,6 +48,8 @@ end
 function Activate()
   GameRules.GameMode = GameMode()
   GameRules.GameMode:_InitGameMode()
+  GameRules.AddonTemplate = CAddonTemplateGameMode()
+  GameRules.AddonTemplate:InitGameMode()
 end
 
 if CAddonTemplateGameMode == nil then
@@ -64,21 +66,15 @@ function Precache( context )
   ]]
 end
 
-
-
---[[   Button    ]]
-function Activate()
-  GameRules.AddonTemplate = CAddonTemplateGameMode()
-  GameRules.AddonTemplate:InitGameMode()
-end
-
 function CAddonTemplateGameMode:InitGameMode()
   print( "Template addon is loaded." )
   CustomGameEventManager:RegisterListener("event_test", Dynamic_Wrap(CAddonTemplateGameMode, 'OnTest'))
 end
 
 function CAddonTemplateGameMode:OnTest( keys )
+  --[[ Old code used as an example
   for k,v in pairs(keys) do
     print(k,v)
-  end
+  end]]
+  CreateUnit()
 end
