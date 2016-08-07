@@ -9,7 +9,7 @@ if GameMode == nil then
     DebugPrint( '[BAREBONES] creating barebones game mode' )
     _G.GameMode = class({})
 end
-
+  
 -- This library allow for easily delayed/timed actions
 require('libraries/timers')
 -- This library can be used for advancted physics/motion/collision of units.  See PhysicsReadme.txt for more information.
@@ -42,7 +42,7 @@ require('settings')
 -- events.lua is where you can specify the actions to be taken when any event occurs and is one of the core barebones files.
 require('events')
 
-
+require('test')
 -- This is a detailed example of many of the containers.lua possibilities, but only activates if you use the provided "playground" map
 if GetMapName() == "playground" then
   require("examples/playground")

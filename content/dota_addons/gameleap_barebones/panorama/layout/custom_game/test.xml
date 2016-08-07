@@ -1,0 +1,25 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/test.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/test.js" />
+    </scripts>
+    <Panel class="Main">
+        <Panel id="button">
+            <Button id="btnTest"  onactivate="onBtnTestClick('myArgument')">
+                <Label id="button_text" text="Click me"/>
+            </Button>
+        </Panel>
+        <Panel id="zeus_panel">
+            <DOTAScenePanel style="width:400px;height:400px;" unit="npc_dota_hero_zuus" /> </Panel>
+        <Panel class="DropDown" id="dropdown_menu">
+            <DropDown oninputsubmit="OnDropDownChanged()">
+                <Label text="BOOOOOOO" id="entry1" />
+                <Label text="Pepi's entry" id="entry2" />
+                <Label text="Entry 3" id="entry3" />
+                <Label text="Entry 4" id="entry4" />
+            </DropDown>
+        </Panel>
+    </Panel>
+</root>

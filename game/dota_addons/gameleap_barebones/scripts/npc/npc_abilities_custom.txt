@@ -330,5 +330,63 @@
     "BaseClass"           "ability_datadriven"
     "AbilityTextureName"            "rubick_empty1"
   }
+
+
+
+"bo_ability"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "lina_laguna_Blade"
+  "MaxLevel"            "3"
+
+  "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+  "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+  "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+  "AbilityUnitDamageType"     "DAMAGE_TYPE_MAGICAL"
+  "AbilityDamage"         "5000"
+  ""OnSpellStart"
+  {
+    "Damage"
+    {
+      "Target"    "TARGET"
+      "Type"      "DAMAGE_TYPE_MAGICAL"
+      "Damage"    "%AbilityDamage"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

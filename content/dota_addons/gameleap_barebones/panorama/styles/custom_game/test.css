@@ -1,0 +1,92 @@
+.Main {
+    margin-top: 10%;
+    border: 2px solid red;
+    width: 25%;
+    height: 100%;
+}
+
+#btnTest {
+    /*обычное состояние*/
+    background-color: #ec4;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+#button {
+    horizontal-align: center;
+    vertical-align: top;
+    border: 2px solid blue;
+    position: absolute;
+    display: inline-block;
+}
+
+
+/* #btnTest:hover {	
+ 	width: 105px;
+ 	height: 105px;
+}
+#btnTest:active {	
+ 	border: 4px solid #fffF;	
+ 	color: red;
+}
+
+*/
+
+#btnTest {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    text-orientation: down;
+
+}
+
+#btnTest:hover {
+    background-color: red;
+}
+
+#btnTest:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#dropdown_menu {
+    width: auto;
+    height: auto;
+    border: 2px solid red;
+    vertical-align: top;
+    horizontal-align: left;
+    font-size: 25px;
+}
+
+#button_text {
+	vertical-align: center;
+	horizontal-align: center;
+	color: black;
+
+}
+
+#zeus_panel {
+    positon: relative;
+    display: inline;
+    height: 380px;
+    width: 300px;
+    border: 4px solid yellow;
+    z-index: -1;
+}
+.DropDown {
+	height: 200px;
+	width: 100px;
+}
+.DropDown Label {
+	padding-top: 15%;
+	margin-top: 15%;
+	display: inline-block;
+	position: relative;
+}

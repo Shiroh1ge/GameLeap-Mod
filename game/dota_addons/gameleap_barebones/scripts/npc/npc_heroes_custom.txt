@@ -3,9 +3,9 @@
   "npc_dota_hero_ancient_apparition_barebones"
   {
     "AbilityLayout"     "6"
-    "override_hero"     "npc_dota_hero_ancient_apparition"
+    "override_hero"     ""
     "SoundSet"          "0" 
-    "Ability1"        "example_ability" 
+    "Ability1"        "bo_ability" 
     "Ability2"        "barebones_empty2" 
     "Ability3"        "barebones_empty3" 
     "Ability4"        "barebones_empty4"
@@ -56,4 +56,13 @@
     "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
   }
+
+
+
+
+
+
+
+
+
 }

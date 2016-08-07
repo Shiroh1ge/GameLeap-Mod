@@ -1,0 +1,17 @@
+.Main {
+	vertical-align: center; 	/* выравнивание по центру */
+	horizontal-align: center;
+}
+
+#btnTest {	/* Обычное состояние */
+ 	background-color: #ec4; /* Цвет фона */
+ 	width: 200px; /* Ширина и ниже - высота */
+ 	height: 200px;
+}
+
+#btnTest:hover {	/* При наведении */
+ 	width: 205px;
+ 	height: 205px;
+}
+#btnTest:active {	/* При нажатии */
+ 	border: 4px solid #fff; /* Рамка в 4 пикселя шириной и с белым цветом */

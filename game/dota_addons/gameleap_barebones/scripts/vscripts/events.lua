@@ -95,6 +95,12 @@ function GameMode:OnAbilityUsed(keys)
 
   local player = PlayerResource:GetPlayer(keys.PlayerID)
   local abilityname = keys.abilityname
+
+  CheckAbilityName(player, abilityname)
+
+   
+
+
 end
 
 -- A non-player entity (necro-book, chen creep, etc) used an ability
