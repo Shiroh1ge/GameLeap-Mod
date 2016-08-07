@@ -2,14 +2,16 @@
     margin-top: 10%;
     border: 2px solid red;
     width: 25%;
-    height: 100%;
+    height: 63%;
+    opacity: 0.95;
+    z-index:-1;
 }
 
 #btnTest {
     /*обычное состояние*/
-    background-color: #ec4;
-    width: 100px;
-    height: 100px;
+    background-image: url(file://{images}/custom_game/menu_images/last_hitting_button.png) no-repeat;
+    width: 512px;
+    height: 64px;
     border: 3px solid black;
 }
 
@@ -18,7 +20,8 @@
     vertical-align: top;
     border: 2px solid blue;
     position: absolute;
-    display: inline-block;
+    display: block;
+    z-index: 1;
 }
 
 
@@ -43,6 +46,7 @@
     border-radius: 15px;
     box-shadow: 0 9px #999;
     text-orientation: down;
+
 
 }
 
@@ -74,11 +78,11 @@
 
 #zeus_panel {
     positon: relative;
-    display: inline;
+    display: block;
     height: 380px;
     width: 300px;
     border: 4px solid yellow;
-    z-index: -1;
+    z-index: 0;
 }
 .DropDown {
 	height: 200px;
@@ -90,3 +94,6 @@
 	display: inline-block;
 	position: relative;
 }
+
+
+/* file://{images}/custom_game/loading_screen/gamemode.png

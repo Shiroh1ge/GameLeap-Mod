@@ -6,6 +6,7 @@
         <include src="file://{resources}/scripts/custom_game/test.js" />
     </scripts>
     <Panel class="Main">
+         <Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/menu_images/menu_background.png" />
         <Panel id="button">
             <Button id="btnTest"  onactivate="onBtnTestClick('myArgument')">
                 <Label id="button_text" text="Click me"/>
