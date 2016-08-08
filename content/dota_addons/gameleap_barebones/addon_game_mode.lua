@@ -15,11 +15,16 @@ end
 function Activate()
 	GameRules.AddonTemplate = CAddonTemplateGameMode()
 	GameRules.AddonTemplate:InitGameMode()
+
 end
 
 function CAddonTemplateGameMode:InitGameMode()
 	print( "Template addon is loaded." )
+	PlayerResource:SetCustomTeamAssignment( 0, DOTA_TEAM_GOODGUYS ) -- Sets team to player automatically
+   	GameRules:SetCustomGameSetupTimeout( 0 ) -- removes team picking phase
+
 	CustomGameEventManager:RegisterListener("event_test", Dynamic_Wrap(CAddonTemplateGameMode, 'OnTest'))
+
 end
 
 function CAddonTemplateGameMode:OnTest( keys )
