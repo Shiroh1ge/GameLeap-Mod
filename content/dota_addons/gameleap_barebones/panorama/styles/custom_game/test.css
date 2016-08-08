@@ -10,9 +10,11 @@
 #btnTest {
     /*обычное состояние*/
     background-image: url(file://{images}/custom_game/menu_images/last_hitting_button.png) no-repeat;
-    width: 400px;
+    width: 512px;
     height: 64px;
     border: 3px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #button {
