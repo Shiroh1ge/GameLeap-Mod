@@ -1,61 +1,55 @@
 .Main {
     margin-top: 10%;
     border: 2px solid red;
-    width: 25%;
+    width: 20%;
     height: 63%;
     opacity: 0.95;
-    z-index:-1;
+    z-index: -1;
 }
-
-#btnTest {
-    /*обычное состояние*/
-    background-image: url(file://{images}/custom_game/menu_images/last_hitting_button.png) no-repeat;
-    width: 512px;
-    height: 64px;
-    border: 3px solid black;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 #button {
     horizontal-align: center;
+    margin-top: 7%;
+
+    width: 80%;
+    height: 64px;   
+
+}
+#btnTest {
+    background-image: url(file://{images}/custom_game/menu_images/last_hitting_button.png) no-repeat;
+    background-repeat: no-repeat;
+    horizontal-align: center;
     vertical-align: top;
-    border: 2px solid blue;
+   /* border: 2px solid lightblue; */
     position: absolute;
     display: inline-block;
     z-index: 1;
-    margin-top: 5%;
+    background-size: 100%;
+    width: 100%;
+    height: 80px;
+
+
 }
 
 
-/* #btnTest:hover {	
- 	width: 105px;
- 	height: 105px;
-}
-#btnTest:active {	
- 	border: 4px solid #fffF;	
- 	color: red;
-}
+#button_text {
+    vertical-align: center;
+    horizontal-align: center;
+    font-weight: bold;
+    color: #D3FAFE;
+    font-size: 18px;
 
-*/
-
-#btnTest {
-
-    font-size: 24px;
-    cursor: pointer;
-    outline: none;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    text-orientation: down;
-
-
+    font-family: "Goudy Trajan Medium";
 }
 
 #btnTest:hover {
-    background-color: red;
+      
+
+
+
+
 }
+
+
 
 #btnTest:active {
     background-color: #3e8e41;
@@ -63,21 +57,8 @@
     transform: translateY(4px);
 }
 
-#dropdown_menu {
-    width: auto;
-    height: auto;
-    border: 2px solid red;
-    vertical-align: top;
-    horizontal-align: left;
-    font-size: 25px;
-}
 
-#button_text {
-	vertical-align: center;
-	horizontal-align: center;
-	color: black;
 
-}
 
 #zeus_panel {
     positon: relative;
@@ -87,16 +68,8 @@
     border: 4px solid yellow;
     z-index: 0;
 }
-.DropDown {
-	height: 200px;
-	width: 100px;
-}
-.DropDown Label {
-	padding-top: 15%;
-	margin-top: 15%;
-	display: inline-block;
-	position: relative;
-}
+
+
 
 
 /* file://{images}/custom_game/loading_screen/gamemode.png
