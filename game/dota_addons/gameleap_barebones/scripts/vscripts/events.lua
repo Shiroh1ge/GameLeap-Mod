@@ -151,6 +151,9 @@ function GameMode:OnLastHit(keys)
   local isTowerKill = keys.TowerKill == 1
   local player = PlayerResource:GetPlayer(keys.PlayerID)
   local killedEnt = EntIndexToHScript(keys.EntKilled)
+
+  local playerLastHits = PlayerResource:GetLastHits(keys.PlayerID) + 1
+  print(playerLastHits)
 end
 
 -- A tree was cut down by tango, quelling blade, etc
