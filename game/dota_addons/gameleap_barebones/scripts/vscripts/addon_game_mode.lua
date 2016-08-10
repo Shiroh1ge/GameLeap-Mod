@@ -68,6 +68,8 @@ end
 
 function CAddonTemplateGameMode:InitGameMode()
   print( "Template addon is loaded." )
+  GameRules:SetCustomGameSetupTimeout(0)
+  PlayerResource:SetCustomTeamAssignment( 0, DOTA_TEAM_GOODGUYS )
   CustomGameEventManager:RegisterListener("event_test", Dynamic_Wrap(CAddonTemplateGameMode, 'OnTest'))
 end
 

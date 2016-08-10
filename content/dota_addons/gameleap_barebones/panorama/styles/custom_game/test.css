@@ -6,32 +6,61 @@
     opacity: 0.95;
     z-index: -1;
 }
-#button {
-    horizontal-align: center;
-    margin-top: 7%;
 
-    width: 80%;
-    height: 64px;   
+
+.buttons {
+    border: 2px solid green;
+
 
 }
+
+#button_1 {
+    display: block;
+    position:absolute;
+    top: 150px;
+    margin-top: 70px;
+}
+
+#button_2{
+    display: block;
+
+
+
+
+}
+
+
+
+#test_button {
+
+    border: 2px solid blue;
+    background-image: url(file://{images}/custom_game/menu_images/last_hitting_button.png) no-repeat;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    background-size: 100%;
+
+}
+
+
+
 #btnTest {
     background-image: url(file://{images}/custom_game/menu_images/last_hitting_button.png) no-repeat;
     background-repeat: no-repeat;
-    horizontal-align: center;
-    vertical-align: top;
-   /* border: 2px solid lightblue; */
-    position: absolute;
-    display: inline-block;
+
+    border: 2px solid red; 
+
     z-index: 1;
     background-size: 100%;
-    width: 100%;
-    height: 80px;
-
+    width: 200px;
+    height: 60px;
 
 }
 
 
-#button_text {
+
+
+.button_text {
     vertical-align: center;
     horizontal-align: center;
     font-weight: bold;
@@ -51,7 +80,7 @@
 
 
 
-#btnTest:active {
+#test_button:active, #btnTest:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
