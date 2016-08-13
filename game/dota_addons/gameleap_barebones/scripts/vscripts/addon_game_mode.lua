@@ -78,5 +78,5 @@ function CAddonTemplateGameMode:OnTest( keys )
   for k,v in pairs(keys) do
     print(k,v)
   end]]
-  CreateUnit()
+  StartLastHittingPractice()
 end

@@ -100,6 +100,9 @@ end
 function GameMode:OnHeroInGame(hero)
   DebugPrint("[BAREBONES] Hero spawned in game for first time -- " .. hero:GetUnitName())
 
+  -- Pausing the game when the player enters.
+  PauseGame(true)
+
   -- This line for example will set the starting gold of every hero to 500 unreliable gold
   --hero:SetGold(500, false)
 
@@ -132,7 +135,7 @@ end
 
 
 
--- This function initializes the game mode and is called before anyone loads into the game
+--This function initializes the game mode and is called before anyone loads into the game
 -- It can be used to pre-initialize any values/tables that will be needed later
 function GameMode:InitGameMode()
   GameMode = self
